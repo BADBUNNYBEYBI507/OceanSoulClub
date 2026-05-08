@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Soul Club | Surf Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+            <img src="imagenes/LOGO BLNCOO.png">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#cat1">TABLAS</a></li>
+                <li><a href="#cat2">COMPONENTES</a></li>
+                <li><a href="#cat3">EQUIPAMIENTO TÉCNICO</a></li>
+                <li><a href="#cat4">PROTECCIÓN PERSONAL</a></li>
+                <li><a href="#cat5">MERCH</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+     <div class="mobile-menu" id="mobile-menu">
+
+         <div class="close-menu" id="close-menu">
+           <i class="fa-solid fa-xmark"></i>
+           </div>
+           <a href="#cat6">INICIO</a>
+           <a href="#cat6">Testimonios</a>
+           <a href="#cat6">Contactos</a>
+           <a href="#cat6">Información</a>
+         </div>
+
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+              <h1>Ocean Soul Club</h1>
+              <p>Equipamiento premium para surfistas.</p>
+              <a href="#cat1" class="btn-main">
+               Ver Colección
+             </a>
+           </div>
+        </section>
+
+    <main class="main-content">
+        <section id="cat1" class="category-section">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2 class="cat-title">Tablas de Surf</h2>
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">GUN</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/SURF.PNG" alt=""><h4>Channel Islands Orange</h4><p>$450.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/surf1.PNG" alt=""><h4>Channel Islands Green</h4><p>$400.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/surf2.PNG" alt=""><h4>Channel Islands Red</h4><p>$350.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/Tablasurf.PNG" alt=""><h4>Channel Islands Yellow</h4><p>$300.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+                <div class="section-header" style="text-align: center; margin-top: 40px;">
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">FISH</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/fish1.jpeg" alt=""><h4>Fish Christenson</h4><p>$450.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/fish2.jpeg" alt=""><h4>Fish Retro</h4><p>$460.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/fish3.jpeg" alt=""><h4>Volcanic Fish</h4><p>$500.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/fish4.jpeg" alt=""><h4>Myconaut Fish</h4><p>$700.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+                <div class="section-header" style="text-align: center; margin-top: 40px;">
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">SHORTBOARD</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/short1.jpeg" alt=""><h4>OP1 Shortboard</h4><p>$467.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/short2.jpeg" alt=""><h4>Lost Shortboard</h4><p>$490.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/short3.jpeg" alt=""><h4>Indio Shortboard</h4><p>$269.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/short4.jpeg" alt=""><h4>Orange Shortboard</h4><p>$535.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+                <div class="section-header" style="text-align: center; margin-top: 40px;">
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">LONGBOARD</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/long1.jpeg" alt=""><h4>Takayama Longboard</h4><p>$500.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/long2.jpeg" alt=""><h4>Blood Longboard</h4><p>$450.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/long3.jpeg" alt=""><h4>Takayama XP</h4><p>$415.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/longboard cc.png" alt=""><h4>Longboard Classic</h4><p>$400.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+                <div class="section-header" style="text-align: center; margin-top: 40px;">
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">SOFTBOARD</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/soft.jpeg" alt=""><h4>BW Softboard</h4><p>$450.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/soft2.jpeg" alt=""><h4>Industries Softboard</h4><p>$420.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/soft32.jpeg" alt=""><h4>Pro Soul Softboard</h4><p>$480.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/soft4.jpeg" alt=""><h4>De Sousa Softboard</h4><p>$700.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+                <div class="section-header" style="text-align: center; margin-top: 40px;">
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">FUNBOARD</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/FUN1.jpeg" alt=""><h4>Pink Funboard</h4><p>$450.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/FUN2.jpeg" alt=""><h4>Stripes Funboard</h4><p>$420.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/FUN3.jpeg" alt=""><h4>Egg Funboard</h4><p>$480.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/FUN4.jpeg" alt=""><h4>Lilac Funboard</h4><p>$700.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+            </div>
+        </section>
+
+          <section id="cat2" class="category-section gray-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2 class="cat-title">Componentes y accesorios de tabla</h2>
+                  <h3 class="cat-subtitle" style="text-align: center; width: 100%;">QUILLAS</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/quillas1.jpeg" alt=""><h4>Quilla Alpha</h4><p>$85.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/quillas2.jpeg" alt=""><h4>Quilla Bloond</h4><p>$75.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/quillas 3.jpeg" alt=""><h4>Quilla Kawasaki</h4><p>$65.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/quillas4.jpeg" alt=""><h4>Quilla Obsidian</h4><p>$60.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+                 <h3 class="cat-subtitle" style="text-align: center; width: 100%;">LEASH</h3>
+                    <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/leash1.jpeg" alt=""><h4>Leash Diamond</h4><p>$85.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/leash2.jpeg" alt=""><h4>Leash 6ft</h4><p>$75.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/leash3.jpeg" alt=""><h4>Leash 8ft</h4><p>$65.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/leash4.jpeg" alt=""><h4>Leash Búho</h4><p>$60.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+            </div>
+        </section>
+        
+  <section id="cat3" class="category-section gray-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2 class="cat-title">EQUIPAMIENTO TÉCNICO</h2>
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">WETSUIT</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/neo1.jpeg" alt=""><h4>D/Patrol 3/2 Bz Blue</h4><p>$100.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/neo3men.jpeg" alt=""><h4>E Bomb 43Gb Zip</h4><p>$95.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/neo2.jpeg" alt=""><h4>Bz Stm 32 Gb</h4><p>$85.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/neo4men.jpeg" alt=""><h4>DAWN 5/4 Chest Zip</h4><p>$90.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+                 <h3 class="cat-subtitle" style="text-align: center; width: 100%;">LYCRA UV</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/LICRAM.JPEG" alt=""><h4>Lycra UPF</h4><p>$35.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/LICRAW.JPEG" alt=""><h4>Lycra Boyleg Uv </h4><p>$35.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+            </div>
+        </section>
+
+          <section id="cat4" class="category-section gray-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2 class="cat-title">PROTECCIÓN PERSONAL</h2>
+                   <h3 class="cat-subtitle" style="text-align: center; width: 100%;">BLOQUEADOR SOLAR</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/CREMA1.jpeg" alt=""><h4>Ultra Protection Spf 50+</h4><p>$30.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/BARRA1.jpeg" alt=""><h4>Avène Fluido</h4><p>$25.50</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/CREMA2.jpeg" alt=""><h4>Tanga Acabado Mate</h4><p>$20.75</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/dolce bella.png" alt=""><h4>Dolce Bella</h4><p>$22.15</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+               <h3 class="cat-subtitle" style="text-align: center; width: 100%;">GAFAS POLARIZADAS</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="imagenes/GAFAS1.jpeg" alt=""><h4>Polaroid PLD </h4><p>$85.85</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/GAFAS2.jpeg" alt=""><h4>Prada PR </h4><p>$75.25</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/GAFAS3.jpeg" alt=""><h4>Oakley Exchange</h4><p>$70.95</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/GAFAS4.jpeg" alt=""><h4>Ray-Ban RB2132</h4><p>$65.45</p><button class="btn-add">Comprar</button></div>
+                </div>
+            </div>
+        </section>
+
+          <section id="cat5" class="category-section gray-bg">
+            <div class="container">
+                <div class="section-header" style="text-align: center;">
+                    <h2 class="cat-title">MERCHANDISING</h2>
+                    <h3 class="cat-subtitle" style="text-align: center; width: 100%;">GORRAS</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="ocean soul club/gorras/Bucket sandia.png" alt=""><h4>Watermelon Bucket Hat</h4><p>$55.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/gorras/bucket.png" alt=""><h4>Basic Bucket Hat</h4><p>$40.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/gorras/gorra amarilla.png" alt=""><h4>Grip Pad Eco</h4><p>$45.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/gorras/gorra azul negra.png" alt=""><h4>Twin Fins</h4><p>$50.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+
+              <h3 class="cat-subtitle" style="text-align: center; width: 100%;">CAMISAS</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="ocean soul club/tshirts/pink.png" alt=""><h4>Pink</h4><p>$34.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="imagenes/azul marino.png" alt=""><h4>Blue</h4><p>$45.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/tshirts/camisa negra.png" alt=""><h4>Black</h4><p>$25.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/tshirts/morado.png" alt=""><h4>Purple</h4><p>$30.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+            </div>
+        </section>
+
+         <h3 class="cat-subtitle" style="text-align: center; width: 100%;">BOLSAS</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="ocean soul club/totebag/amarillo amarillo.png" alt=""><h4>Tote Bag Amarillo</h4><p>$40.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/totebag/rosa rosa.png" alt=""><h4>Tote Bag Rosa</h4><p>$50.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/totebag/totebag azul.png" alt=""><h4>Tote Bag Azul</h4><p>$47.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/totebag/negra amarilla.png" alt=""><h4>Tote Bag Negra</h4><p>$38.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+            </div>
+        </section>
+
+         <h3 class="cat-subtitle" style="text-align: center; width: 100%;">SANDALIAS</h3>
+                </div>
+                <div class="product-grid">
+                    <div class="product-card"><img src="ocean soul club/chanclas/aqua.png" alt=""><h4>Quilla Alpha</h4><p>$35.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/chanclas/blancas.png" alt=""><h4>Leash 6ft</h4><p>$15.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/chanclas/azules.png" alt=""><h4>Grip Pad Eco</h4><p>$25.00</p><button class="btn-add">Comprar</button></div>
+                    <div class="product-card"><img src="ocean soul club/chanclas/negras.png" alt=""><h4>Twin Fins</h4><p>$15.00</p><button class="btn-add">Comprar</button></div>
+                </div>
+            </div>
+        </section>
+
+
+    <section class="testimonios">
+            <div class="section-header" style="text-align: center;">
+                 <h2 class="cat-title">Testimonios</h2>
+                 <p class="cat-subtitle" style="text-align: center; width: 100%;">Lo que nuestros clientes dicen sobre nosotros</p>
+            </div>
+       <div class="testimonio-grid">
+        
+        <div class="testimonio-card">
+            <div class="profile-img">
+                <img src="imagenes/AnuelAA.jpg" alt="Usuario">
+            </div>
+            <div class="testimonio-body">
+                <p class="texto">"Real hasta la muerte, baby. 🌊 Compré la tabla y ahora cada ola parece videoclip… ‘brrr’, bajando tubos como si estuviera escapando de los federales Uaaaa👹🔥🔥”"</p>
+                <div class="stars">★★★★★</div>
+                <h4 class="nombre">Anuel AA</h4>
+                <p class="cargo">Comediante<span></span></p>
+            </div>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="profile-img">
+                <img src="imagenes/maluma.jpg" alt="Usuario">
+            </div>
+            <div class="testimonio-body">
+                <p class="texto">"Parce… el flow del mar, las olas y una tabla bien hecha no se explican, se sienten. Qué energía tan brutal tiene esta tienda. Calidad, estilo y vibra premium, baby 😈🌴"</p>
+                <div class="stars">★★★★★</div>
+                <h4 class="nombre">Maluma Beybi</h4>
+                <p class="cargo">Cantante<span></span></p>
+            </div>
+        </div>
+
+        
+        <div class="testimonio-card">
+            <div class="profile-img">
+                <img src="imagenes/Westcol.jpg" alt="Usuario">
+            </div>
+            <div class="testimonio-body">
+                <p class="texto">"Papi, compré una tabla ahí y ahora me creo protagonista de Rápido y Furioso pero en el agua. Ya nada más me falta el live gritando: ‘MI HERMANOOO, QUÉ OLA TAN HP"</p>
+                <div class="stars">★★★★★</div>
+                <h4 class="nombre">Westcol</h4>
+                <p class="cargo">Streamer<span></span></p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="footer" id="contacto">
+        <div class="container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Información de Contacto</p>
+                    <ul>
+                        <li>Dirección: Ciudad Del Saber.</li>
+                        <li>Teléfono: 267-1234</li>
+                        <li>Fax: 1-555-876-5432</li>
+                        <li>EmaiL: oceansoulclub@support.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                        <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                        <span class="youtube"><i class="fa-brands fa-youtube"></i></span>
+                        <span class="pinterest"><i class="fa-brands fa-pinterest-p"></i></span>
+                        <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Información Delivery</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                    </ul>
+                </div>
+
+                <div class="my-account">
+                    <p class="title-footer">Mi cuenta</p>
+                    <ul>
+                        <li><a href="#">Boletín</a></li>
+                        <li><a href="#">Mi cuenta</a></li>
+                        <li><a href="#">Reembolsos</a></li>
+                        <li><a href="#">Lista de deseos</a></li>
+                        <li><a href="#">Historial de ordenes</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <p class="title-footer">Boletín informativo</p>
+                    <div class="content">
+                        <p>Suscríbete YA y mantentente al día con nuestras nuevas colecciones.</p>
+                        <input type="email" placeholder="Ingresa el correo aquí...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Ocean Soul Club © 2022</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
