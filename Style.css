@@ -1,0 +1,683 @@
+:root {
+    --blue: #0077be;
+    --dark: #1a1a1a;
+    --gray: #f4f4f4;
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: url('imagenes/cursorSOULCLUB.png') 16 16, auto;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo img{
+    width: 70px;
+    transition: 0.3s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img:hover{
+    transform: scale(1.05);
+}
+
+.logo span {
+    font-size: 2rem;
+    color: white;
+    font-weight: 800;
+}
+
+.navbar{
+    backdrop-filter: blur(8px);
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 5000;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: rgba(0,20,40,0.95);
+    backdrop-filter: blur(15px);
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+    padding: 120px 40px;
+    gap: 30px;
+    transition: 0.5s ease;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.close-menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+@media(max-width: 950px){
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.hero {
+    height: 100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('imagenes/tim-marshall-y74zvFZ5mSU-unsplash.jpg');
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 6%;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes zoomHero {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+.hero-content h1 {
+    text-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.hero-content h1 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    color: white;
+    max-width: 900px;
+    margin-bottom: 20px;
+    letter-spacing: -2px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.btn-main {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 18px 42px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.4s ease;
+    display: inline-block;
+}
+
+.btn-main:hover {
+    background: white;
+    color: black;
+    transform: translateY(-4px);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-visual img {
+    width: 600px; 
+    max-width: 90%;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3)); 
+    animation: float 4s ease-in-out infinite; 
+}
+
+.hero-badge {
+    display: inline-block; /* Importante para que acepte márgenes correctamente */
+    margin-bottom: 15px; /* Controla la separación con el título H1 */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.category-section { 
+    padding: 80px 5%; 
+}
+
+.gray-bg {
+    background: #eef3f7;
+}
+
+.section-header { 
+    text-align: center; 
+    margin-bottom: 50px; 
+    width: 100%;
+}
+
+.cat-title {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+.cat-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #5b6c7c;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product-card {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.12);
+}
+
+.product-card img { 
+    width: 60%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.product-card img[src*="quillas"] {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    padding: 15px;
+}
+
+
+.product-card img[src*="LICRA"] {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-card:hover img[src*="LICRA"] {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+.product-card img[src*="quillas"]
+.product-card img[src*="leash"] {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-card:hover img[src*="quillas"],
+.product-card:hover img[src*="leash"] {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+.product-card img[src*="neo"],
+.product-card img[src*="LICRA"] {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.product-card:hover img[src*="neo"],
+.product-card:hover img[src*="LICRA"] {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+.product-card img[src*="CREMA"],
+.product-card img[src*="BARRA"],
+.product-card img[src*="GAFAS"] {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-card:hover img[src*="CREMA"],
+.product-card:hover img[src*="BARRA"],
+.product-card:hover img[src*="GAFAS"] {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+.product-card {
+    overflow: hidden;
+}
+
+.product-card img[src*="surf"],
+.product-card img[src*="SURF"],
+.product-card img[src*="fish"],
+.product-card img[src*="short"],
+.product-card img[src*="long"],
+.product-card img[src*="soft"],
+.product-card img[src*="FUN"] {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-card img[src*="sof3"] {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.product-card img[src*="neo"],
+.product-card img[src*="LICRA"] {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-card img[src*="GORRAS"] {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background: linear-gradient(180deg, #ffffff, #f7f7f7);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-card:hover img[src*="neo"],
+.product-card:hover img[src*="LICRA"] {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+
+.product-card p {
+    color: var(--blue);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.fix-card img {
+    margin-top: 15px;
+}
+
+.btn-add {
+    background: #0b6ea8;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-add:hover {
+    transform: scale(1.03);
+    background: #084f78;
+}
+.footer { 
+    background: #111; 
+    color: #eee; 
+    padding: 60px 5% 20px; 
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.title-footer { 
+    color: var(--blue); 
+    font-weight: 800; 
+    margin-bottom: 20px; 
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.footer ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+.footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: var(--blue);
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons span {
+    background: #222;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.social-icons span:hover {
+    background: var(--blue);
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+:root {
+    --rojo-principal: #c83e4d; /* El color de tu imagen */
+}
+
+.testimonio-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 5%;
+    background: white;
+}
+
+.testimonio-card {
+    background: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    margin-top: 50px; /* Espacio para la foto que sobresale */
+}
+
+.testimonio-grid {
+    display: flex;            
+    justify-content: center;  
+    align-items: stretch;     
+    gap: 30px;                
+    padding: 100px 5% 50px;   
+    flex-wrap: wrap;          
+}
+
+.testimonio-card {
+    background: white;
+    flex: 1;                  /* Permite que crezcan parejo */
+    min-width: 300px;         /* Evita que se encojan demasiado */
+    max-width: 380px;         /* Evita que se hagan gigantes */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    margin-top: 50px;         /* Espacio vital para la foto flotante */
+}
+
+/* La imagen de perfil */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    margin: -70px auto 15px;  /* Sube la foto a la mitad del borde */
+    border-radius: 50%;
+    border: 4px solid #fff;   /* Borde blanco para que resalte */
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    margin: -90px auto 20px; /* MARGEN NEGATIVO para subir la foto */
+    border-radius: 50%;
+    border: 5px solid var(--azul-principal);
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.texto {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: var(--azul-principal);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.nombre {
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.cargo {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.cargo span {
+    color: var(--azul-principal);
+}
+
+
+.testimonio-card.highlight {
+    background-color: var(--azul-principal);
+    color: white;
+}
+
+.testimonios .section-header {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 60px auto;
+}
+
+.testimonios .cat-title,
+.testimonios .cat-subtitle {
+    text-align: center;
+}
+
+.testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.testimonio-card.highlight .texto, 
+.testimonio-card.highlight .cargo,
+.testimonio-card.highlight .stars {
+    color: var(--blue);
+}
+
+.copyright { 
+    margin-top: 50px; 
+    border-top: 1px solid #222; 
+    padding-top: 20px; 
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}
